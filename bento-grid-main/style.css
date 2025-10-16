@@ -1,0 +1,12 @@
+
+@font-face{
+    font-family: 'DM Sans';
+    src: url('E:/Coding/challenges/bento-grid-main/assets/fonts/static/DMSans-Medium.ttf') format('ttf');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+
+}
