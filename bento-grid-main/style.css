@@ -7,7 +7,7 @@
 @font-face{
     font-family: 'DM Sans-regular';
     src: url('E:/Coding/challenges/bento-grid-main/assets/fonts/DMSans-Regular.ttf') format('ttf');
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
 }
 * {
@@ -17,96 +17,110 @@
     font-family: 'DM Sans-regular', sans-serif;
 
 }
-/* .container {
-    background-color: hsla(80, 82%, 39%, 1.00);
+body {
+    width: auto;
+    height: 100vh;
   display: grid;
-  width: 100%;
-  min-height: 100%;
-  grid-template-columns: repeat(12, 2fr);
-  grid-template-rows: repeat(9, 1fr);
-  gap: 0.25rem;
-  padding: 0.25rem;
+  /* Let's assume a 12-column grid. */
+  grid-template-columns: repeat(12, 1fr);
+  /* Roughly estimate enough rows to cover the vertical space. 
+     We'll need at least 8-9 logical rows. */
+  grid-template-rows: repeat(10, 1fr); /* 9 rows to give enough vertical space */
+  gap: 1rem; /* Adjust this value based on desired spacing */
+ padding:1rem; /* Optional padding around the entire grid */
+
   grid-template-areas:
-    /* 'seventh seventh seventh first first first first first first fourth fourth fourth'
-    'seventh seventh seventh first first first first first first fourth fourth fourth'
-    'seventh seventh seventh first first first first first first fourth fourth fourth'
-    'seventh seventh seventh first first first first first first fourth fourth fourth'
-    'seventh second second second third third third fourth fourth fourth fourth fourth'
-    'eighth eighth eighth second second second third third third fourth fourth fourth'
-    'eighth eighth eighth second second second third third third fourth fourth fourth'
-    'eighth eighth eighth sixth sixth sixth fifth fifth fifth fifth fifth fifth'
-    'eighth eighth eighth sixth sixth sixth fifth fifth fifth fifth fifth fifth'; */
-} */
+    "create create create social social social social social social schedule schedule schedule"
+    "create create create social social social social social social schedule schedule schedule"
+    "create create create social social social social social social schedule schedule schedule"
+    "create create create  social social social social social social schedule schedule schedule"
+    "create create create  manage manage manage maintain maintain maintain schedule schedule schedule"
+    "write  write  write  manage manage manage maintain maintain maintain  schedule schedule schedule"
+    "write  write  write  manage manage manage maintain maintain maintain  schedule schedule schedule"
+    "write  write  write  growth growth growth  grow   grow   grow   grow   grow   grow"
+    "write  write  write  growth growth growth  grow   grow   grow   grow   grow   grow"
+    "write  write  write  growth growth growth  grow   grow   grow   grow   grow   grow";
+}
+div{
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    box-transition: transform 0.3s ease;
+}
+
 
 .first-box {
     border: 2px solid hsl(254, 88%, 90%);
-    
-    grid-area: first;
+    grid-area:social;
     background-color: hsl(256, 67%, 59%);
     color: hsl(254, 88%, 90%);
     text-align: center;
+    font-weight: light;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
-    /* grid-column-start: 4;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 3; */
+    padding: 2rem 2rem;
+    flex-direction: column;
+    font-size: 1.5rem;
+   
 }
 .second-box {
-    grid-area: second;
+    grid-area: manage;
     background-color: hsl(0, 0%, 100%);
-    color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 7%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .third-box {
-    grid-area: third;
+    grid-area: maintain;
     background-color: hsl(39, 100%, 71%);
     color: hsl(228, 45%, 44%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .fourth-box {
-    grid-area: fourth;
+    grid-area: schedule;
     background-color: hsl(228, 45%, 44%);
     color: hsl(39, 100%, 71%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .fifth-box {
-    grid-area: fifth;
+    grid-area: grow;
     background-color: hsl(39, 100%, 71%);
     color: hsl(228, 45%, 44%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .sixth-box {
-    grid-area: sixth;
+    grid-area: growth;
     background-color: hsl(228, 45%, 44%);
     color: hsl(39, 100%, 71%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .seventh-box {
-    grid-area: seventh;
+    grid-area: create;
     background-color: hsl(256, 67%, 59%);
     color: hsl(254, 88%, 90%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .eighth-box {
-    grid-area: eighth;
-    background-color: hsl(0, 0%, 100%);
+    grid-area: write;
+    background-color: hsla(0, 74%, 46%, 1.00);
     color: hsl(256, 67%, 59%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 0.25rem 1rem;
 }
 img {
     margin-top: 1rem;
