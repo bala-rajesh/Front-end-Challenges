@@ -16,6 +16,7 @@ img {
     max-width: 100%;
     height: auto;
     margin:0.5rem;
+    box-sizing : border-box;
 
 }
 
@@ -56,7 +57,7 @@ div{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
-    box-transition: transform 0.3s ease;
+    box-sizing : 
 }
 
 
@@ -70,6 +71,7 @@ div{
     font-size: 1.5rem;
     padding: 2rem 2rem;
     font-size: 1.5rem;
+    
    
 }
 #reviews {
@@ -84,14 +86,28 @@ div{
     text-align: center;
     font-size: 1.5rem;
     padding: 0.25rem 1rem;
+    font-weight: bold;
+}
+.second-box img {
+    width: 80%;
+    height: auto;
 }
 .third-box {
     grid-area: maintain;
     background-color: hsl(39, 100%, 71%);
-    color: hsl(228, 45%, 44%);
+    color:hsl(0, 0%, 7%);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 0.25rem 1rem;
+    overflow: hidden;
+}
+.third-box img {
+    display:flex;
+    justify-content:
+    gap: 0.5rem;
+    width: 70%;
+    height: auto;
+
 }
 .fourth-box {
     grid-area: schedule;
