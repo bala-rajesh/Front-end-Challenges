@@ -1,4 +1,6 @@
-
+html{
+    font-size : 16px;
+}
 
 * {
     box-sizing: border-box;
@@ -67,13 +69,13 @@ div{
     font-weight: light;
     font-size: 1.5rem;
     padding: 2rem 2rem;
-    
     font-size: 1.5rem;
    
 }
-.first-box p {
+#reviews {
     font-weight:light;
     color: hsl(254, 88%, 90%);
+    font-size : 0.75 rem;
 }
 .second-box {
     grid-area: manage;
