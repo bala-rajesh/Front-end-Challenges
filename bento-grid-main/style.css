@@ -25,7 +25,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   /* Roughly estimate enough rows to cover the vertical space. 
      We'll need at least 8-9 logical rows. */
-  grid-template-rows: repeat(12, 1fr); /* 9 rows to give enough vertical space */
+  grid-template-rows: repeat(10, 1fr); /* 9 rows to give enough vertical space */
   gap: 1rem; /* Adjust this value based on desired spacing */
  padding:1rem; /* Optional padding around the entire grid */
 
@@ -35,7 +35,7 @@ body {
     "create create create  social social social social social social schedule schedule schedule"
     "create create create   social social social social social social schedule schedule schedule"
     
-    "create create create   manage manage manage maintain maintain maintain schedule  schedule schedule"
+    /* "create create create   manage manage manage maintain maintain maintain schedule  schedule schedule" */
     "create create create   manage manage manage maintain maintain maintain schedule  schedule schedule"
     "write  write write    manage manage manage maintain maintain maintain  schedule schedule schedule"
     "write  write write  manage manage manage maintain maintain maintain  schedule schedule schedule"
@@ -43,7 +43,7 @@ body {
     "write  write write  growth growth growth  grow   grow   grow   grow   grow grow"
     "write  write write  growth growth growth  grow   grow   grow   grow   grow grow"
     "write  write write  growth growth growth  grow   grow   grow   grow   grow grow"
-    "write  write write  growth growth growth  grow   grow   grow   grow   grow grow";
+    /* "write  write write  growth growth growth  grow   grow   grow   grow   grow grow"; */
 }
 div{
     border-radius: 8px;
